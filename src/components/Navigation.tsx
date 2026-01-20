@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Heart, Menu, X } from "lucide-react";
+import { Sparkles, Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#story", label: "Our Story" },
-  { href: "#details", label: "Details" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#rsvp", label: "RSVP" },
+  { href: "#services", label: "Services" },
+  { href: "#about", label: "About" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const Navigation = () => {
@@ -49,14 +50,14 @@ export const Navigation = () => {
             onClick={() => scrollToSection("#home")}
             className="flex items-center gap-2 group"
           >
-            <Heart className="w-5 h-5 text-blush-dark group-hover:scale-110 transition-transform" />
+            <Sparkles className="w-5 h-5 text-gold group-hover:scale-110 transition-transform" />
             <span className="font-serif text-xl md:text-2xl tracking-wide text-foreground">
-              E & J
+              Éternel Events
             </span>
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.href}
@@ -70,19 +71,19 @@ export const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button
               variant="romantic"
               size="sm"
-              onClick={() => scrollToSection("#rsvp")}
+              onClick={() => scrollToSection("#contact")}
             >
-              RSVP Now
+              Book Consultation
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -99,7 +100,7 @@ export const Navigation = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-md border-t border-border"
+            className="lg:hidden bg-background/95 backdrop-blur-md border-t border-border"
           >
             <div className="py-4 space-y-2">
               {navLinks.map((link) => (
@@ -115,9 +116,9 @@ export const Navigation = () => {
                 <Button
                   variant="romantic"
                   className="w-full"
-                  onClick={() => scrollToSection("#rsvp")}
+                  onClick={() => scrollToSection("#contact")}
                 >
-                  RSVP Now
+                  Book Consultation
                 </Button>
               </div>
             </div>
