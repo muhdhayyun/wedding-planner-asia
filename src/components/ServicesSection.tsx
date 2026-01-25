@@ -6,37 +6,37 @@ import { CalendarHeart, Palette, Users, MapPin, Sparkles, Gift } from "lucide-re
 const services = [
   {
     icon: CalendarHeart,
-    title: "Full Planning",
-    description: "From engagement to 'I do' — we handle every detail so you can enjoy the journey.",
+    title: "The Coordination",
+    description: "For the couple that is planning their own wedding and has confirmed all the wedding vendors but wants a wedding specialist to coordinate and manage all the details of the wedding day.",
     features: ["Timeline management", "Vendor coordination", "Budget planning", "Day-of coordination"],
   },
   {
     icon: Palette,
-    title: "Design & Styling",
-    description: "Transform your vision into a breathtaking reality with our creative design expertise.",
+    title: "The Partial Planning",
+    description: "For the couple who has begun planning parts of their wedding but is now overwhelmed with all the details and wants a wedding specialist to assist with some vendor referrals, provide professional advice, and also coordinate and manage the details of the wedding day.",
     features: ["Mood boards", "Floral design", "Tablescape styling", "Lighting design"],
   },
   {
     icon: Users,
-    title: "Partial Planning",
-    description: "Perfect for couples who've started planning but need expert guidance to finish strong.",
+    title: "The Full Planning",
+    description: "For the couple that has limited or no time to plan and coordinate all the details and wants a wedding specialist to take them through the entire wedding planning process, focus on design and décor, assemble their team of vendors, provide unlimited professional advice, and manage every detail of the wedding day.",
     features: ["Vendor recommendations", "Timeline creation", "Month-of support", "Rehearsal coordination"],
   },
   {
     icon: MapPin,
-    title: "Destination Weddings",
-    description: "Dream of saying 'I do' somewhere magical? We'll make it happen seamlessly.",
+    title: "The Destination Planning",
+    description: "This is designed for couples who do not have time to plan their own overseas wedding and need a wedding planner to oversee the process and guide them through all of the decisions they must make. Every aspect of the wedding is carefully planned and orchestrated, and this may include additional activities like a welcome reception, a rehearsal dinner, and a post-wedding brunch for all of the guests.",
     features: ["Location scouting", "Travel coordination", "Local vendor sourcing", "Guest experience"],
   },
   {
     icon: Sparkles,
-    title: "Day-of Coordination",
+    title: "Day-of Coordination **",
     description: "Relax on your big day knowing every detail is in capable, caring hands.",
     features: ["Vendor management", "Timeline execution", "Emergency handling", "Guest coordination"],
   },
   {
     icon: Gift,
-    title: "Special Touches",
+    title: "Special Touches **",
     description: "Elevate your celebration with unique, personalized elements that wow guests.",
     features: ["Welcome gifts", "Custom stationery", "Signature cocktails", "Entertainment booking"],
   },
@@ -64,8 +64,7 @@ export const ServicesSection = () => {
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mb-6" />
           <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
-            Every love story deserves a celebration as unique as the couple. 
-            We offer tailored services to bring your dream wedding to life.
+            We offer our clients several levels of services which include actual wedding day coordination, partial wedding planning and coordination, or producing and executing the entire wedding event. No matter which service you select, we will do our best to ensure that you have a fabulous wedding event. We absolutely love the details and feel that our clients deserve the personalised events.
           </p>
         </motion.div>
 

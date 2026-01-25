@@ -48,30 +48,33 @@ export const AboutSection = () => {
               Meet Your Planner
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-light text-foreground mb-6">
-              Hello, I'm Sophia
+              Hello, I'm Roslina Juri
             </h2>
             <div className="w-16 h-px bg-gold mb-6" />
-            
+
             <div className="space-y-4 font-sans text-muted-foreground leading-relaxed">
               <p>
-                With over a decade of experience in luxury event planning, I founded 
-                Éternel Events with a simple belief: every couple deserves a celebration 
-                that feels authentically theirs.
+                Wedding & Romance’s approach to event planning is personalised and our service is tailored to our clients’ 
+                individual needs. This reflects the personality and essence of each client. 
+                We oversee and execute every aspect of your event, allowing you to fully participate in your own wedding.
               </p>
               <p>
-                My journey began with a passion for design and a love for bringing 
-                people together. Today, I lead a talented team dedicated to creating 
-                weddings that are as unique as the love stories they celebrate.
+                We take on only one wedding on any given weekend and a certain number of events per year. 
+                We limit the number of events we work on to ensure that our clients receive the attention and outcome they deserve.
               </p>
               <p>
-                From intimate garden ceremonies to grand ballroom affairs, we approach 
-                each wedding with fresh eyes and an unwavering commitment to excellence.
+                Wedding & Romance is an independent event planning company. 
+                We are proud of our reputation and are privileged to work alongside the most respected companies in the wedding industry from 
+                Singapore as well as Malaysia and Indonesia. 
+                These companies share our passion, commitment, and high standards of service excellence.
               </p>
             </div>
 
             <p className="font-serif text-xl text-foreground italic mt-8 mb-8">
-              "I believe the best weddings are the ones where guests can't stop smiling 
-              and the couple is free to be completely present in every moment."
+              “People always think, that a wedding planner takes control of the wedding and the whole wedding planning process. 
+              I believe in personalising each wedding event by listening to my clients’ wedding vision, 
+              and recommending the best vendors to match their needs. It is not about me, but rather bringing out my clients’ 
+              personalities and styles to showcase on their wedding day.”
             </p>
 
             {/* Stats */}
