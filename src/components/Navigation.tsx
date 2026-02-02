@@ -35,8 +35,8 @@ export const Navigation = () => {
   return (
     <motion.nav
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
+      animate={{ y: isScrolled ? 0 : -100 }}
+      transition={{ duration: 0.3 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-soft"
@@ -50,9 +50,8 @@ export const Navigation = () => {
             onClick={() => scrollToSection("#home")}
             className="flex items-center gap-2 group"
           >
-            <Sparkles className="w-5 h-5 text-gold group-hover:scale-110 transition-transform" />
             <span className="font-serif text-xl md:text-2xl tracking-wide text-foreground">
-              Éternel Events
+              Wedding & Romance
             </span>
           </button>
 
@@ -77,7 +76,7 @@ export const Navigation = () => {
               size="sm"
               onClick={() => scrollToSection("#contact")}
             >
-              Book Consultation
+              Start Planning Your Day
             </Button>
           </div>
 
@@ -118,7 +117,7 @@ export const Navigation = () => {
                   className="w-full"
                   onClick={() => scrollToSection("#contact")}
                 >
-                  Book Consultation
+                  Start Planning Your Day
                 </Button>
               </div>
             </div>

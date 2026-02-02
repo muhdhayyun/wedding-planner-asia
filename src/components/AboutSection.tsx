@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Award, Heart, Calendar, Star } from "lucide-react";
+import aboutPlanner from "@/assets/about-planner.jpg";
 
 const stats = [
   { icon: Heart, value: "200+", label: "Weddings Planned" },
@@ -28,7 +29,7 @@ export const AboutSection = () => {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-romantic">
               <img
-                src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800"
+                src={aboutPlanner}
                 alt="Wedding planner at work"
                 className="w-full h-full object-cover"
               />

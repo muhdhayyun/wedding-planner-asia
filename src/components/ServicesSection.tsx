@@ -28,18 +28,6 @@ const services = [
     description: "This is designed for couples who do not have time to plan their own overseas wedding and need a wedding planner to oversee the process and guide them through all of the decisions they must make. Every aspect of the wedding is carefully planned and orchestrated, and this may include additional activities like a welcome reception, a rehearsal dinner, and a post-wedding brunch for all of the guests.",
     features: ["Location scouting", "Travel coordination", "Local vendor sourcing", "Guest experience"],
   },
-  {
-    icon: Sparkles,
-    title: "Day-of Coordination **",
-    description: "Relax on your big day knowing every detail is in capable, caring hands.",
-    features: ["Vendor management", "Timeline execution", "Emergency handling", "Guest coordination"],
-  },
-  {
-    icon: Gift,
-    title: "Special Touches **",
-    description: "Elevate your celebration with unique, personalized elements that wow guests.",
-    features: ["Welcome gifts", "Custom stationery", "Signature cocktails", "Entertainment booking"],
-  },
 ];
 
 export const ServicesSection = () => {
@@ -63,12 +51,12 @@ export const ServicesSection = () => {
             Our Services
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mb-6" />
-          <p className="font-sans text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-sans text-muted-foreground max-w-[45rem] mx-auto text-justify text-lg">
             We offer our clients several levels of services which include actual wedding day coordination, partial wedding planning and coordination, or producing and executing the entire wedding event. No matter which service you select, we will do our best to ensure that you have a fabulous wedding event. We absolutely love the details and feel that our clients deserve the personalised events.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <ServiceCard key={service.title} service={service} index={index} />
           ))}
@@ -106,7 +94,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
           <Icon className="w-6 h-6 text-blush-dark" />
         </div>
         <h3 className="font-serif text-2xl text-foreground mb-3">{service.title}</h3>
-        <p className="font-sans text-muted-foreground leading-relaxed mb-4">
+        <p className="font-sans text-muted-foreground leading-relaxed mb-4 text-justify">
           {service.description}
         </p>
         <ul className="space-y-2">

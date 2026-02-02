@@ -35,8 +35,8 @@ export const HeroSection = () => {
           className="flex items-center justify-center gap-2 mb-6"
         >
           <Sparkles className="w-4 h-4 text-gold-light" />
-          <span className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-primary-foreground/80">
-            Luxury Wedding Planning
+          <span className="font-serif text-sm md:text-base tracking-[0.3em] uppercase text-primary-foreground/80">
+            Established in 2005
           </span>
           <Sparkles className="w-4 h-4 text-gold-light" />
         </motion.div>
@@ -47,7 +47,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-primary-foreground mb-6 leading-tight"
         >
-          Éternel Events
+          Wedding & Romance
         </motion.h1>
 
         <motion.div
@@ -80,7 +80,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex justify-center"
         >
           <Button
             variant="hero"
@@ -88,13 +88,6 @@ export const HeroSection = () => {
             onClick={() => scrollToSection("#contact")}
           >
             Start Planning Your Day
-          </Button>
-          <Button
-            variant="hero-outline"
-            size="xl"
-            onClick={() => scrollToSection("#portfolio")}
-          >
-            View Our Work
           </Button>
         </motion.div>
       </div>
