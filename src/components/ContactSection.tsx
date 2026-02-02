@@ -40,7 +40,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-background">
+    <section id="contact" className="py-24 md:py-32 bg-romantic">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.div
           ref={ref}
@@ -82,7 +82,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-sans text-sm text-muted-foreground mb-1">Email</p>
-                    <p className="font-sans text-foreground">hello@eternelevents.com</p>
+                    <p className="font-sans text-foreground">info@weddingandromance.com</p>
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-sans text-sm text-muted-foreground mb-1">Phone</p>
-                    <p className="font-sans text-foreground">+1 (555) 123-4567</p>
+                    <p className="font-sans text-foreground">+65 93865465</p>
                   </div>
                 </div>
 
@@ -101,10 +101,9 @@ export const ContactSection = () => {
                     <MapPin className="w-4 h-4 text-blush-dark" />
                   </div>
                   <div>
-                    <p className="font-sans text-sm text-muted-foreground mb-1">Studio</p>
+                    <p className="font-sans text-sm text-muted-foreground mb-1">Consultation</p>
                     <p className="font-sans text-foreground">
-                      123 Bridal Lane, Suite 200<br />
-                      Los Angeles, CA 90001
+                      Reserve a complimentary 45-minute consultation through <a href="https://calendly.com/weddingandromance" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Calendly</a>
                     </p>
                   </div>
                 </div>
@@ -115,7 +114,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-sans text-sm text-muted-foreground mb-1">Instagram</p>
-                    <p className="font-sans text-foreground">@eternelevents</p>
+                    <p className="font-sans text-foreground">@weddingandromance</p>
                   </div>
                 </div>
               </div>
@@ -187,7 +186,7 @@ export const ContactSection = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="+65 9123 4567"
                       className="bg-background border-border focus:border-gold focus:ring-gold/20"
                     />
                   </div>

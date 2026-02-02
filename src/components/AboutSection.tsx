@@ -1,15 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award, Heart, Calendar, Star } from "lucide-react";
 import aboutPlanner from "@/assets/about-planner.jpg";
-
-const stats = [
-  { icon: Heart, value: "200+", label: "Weddings Planned" },
-  { icon: Calendar, value: "12", label: "Years Experience" },
-  { icon: Award, value: "15+", label: "Industry Awards" },
-  { icon: Star, value: "5.0", label: "Client Rating" },
-];
 
 export const AboutSection = () => {
   const ref = useRef(null);
@@ -72,30 +64,13 @@ export const AboutSection = () => {
             </div>
 
             <p className="font-serif text-xl text-foreground italic mt-8 mb-8">
-              “People always think, that a wedding planner takes control of the wedding and the whole wedding planning process. 
-              I believe in personalising each wedding event by listening to my clients’ wedding vision, 
-              and recommending the best vendors to match their needs. It is not about me, but rather bringing out my clients’ 
-              personalities and styles to showcase on their wedding day.”
+              "People always think, that a wedding planner takes control of the wedding and the whole wedding planning process. 
+              I believe in personalising each wedding event by listening to my clients' wedding vision, 
+              and recommending the best vendors to match their needs. It is not about me, but rather bringing out my clients' 
+              personalities and styles to showcase on their wedding day."
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-border">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                  className="text-center"
-                >
-                  <stat.icon className="w-5 h-5 text-gold mx-auto mb-2" />
-                  <p className="font-serif text-2xl text-foreground">{stat.value}</p>
-                  <p className="font-sans text-xs text-muted-foreground uppercase tracking-wider">
-                    {stat.label}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
+            <div className="w-full h-px bg-border mt-8"></div>
           </motion.div>
         </div>
       </div>

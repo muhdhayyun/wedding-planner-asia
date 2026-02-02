@@ -19,13 +19,12 @@ export const Footer = () => {
   return (
     <footer className="py-16 bg-champagne border-t border-border">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-16 mb-12 max-w-2xl mx-auto md:ml-auto md:mr-[20%]">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Sparkles className="w-5 h-5 text-gold" />
               <span className="font-serif text-2xl text-foreground">
-                Éternel Events
+                Wedding & Romance
               </span>
             </div>
             <p className="font-sans text-muted-foreground mb-6 max-w-xs">
@@ -54,43 +53,20 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-serif text-lg text-foreground mb-4">Quick Links</h4>
-            <ul className="space-y-3">
-              {footerLinks.map((link) => (
-                <li key={link.href}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="font-sans text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div>
             <h4 className="font-serif text-lg text-foreground mb-4">Contact</h4>
             <div className="space-y-3 font-sans text-muted-foreground">
-              <p>hello@eternelevents.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>
-                123 Bridal Lane, Suite 200<br />
-                Los Angeles, CA 90001
-              </p>
+              <p>info@weddingandromance.com</p>
+              <p>+65 93865465</p>
+              <p>@weddingandromance</p>
             </div>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-border text-center">
           <p className="font-sans text-sm text-muted-foreground">
-            © 2024 Éternel Events. All rights reserved.
-          </p>
-          <p className="font-sans text-sm text-muted-foreground">
-            Crafted with love for love.
+            © 2026 Wedding & Romance. All rights reserved.
           </p>
         </div>
       </div>
