@@ -10,7 +10,7 @@ const hotels = [
   { name: "Ginger", image: "/hotels/Ginger.png" }
 ];
 
-export const HotelsSection = ({ bgColor = "bg-slate-900", bgHex, cardBgColorHex }: { bgColor?: string; bgHex?: string; cardBgColorHex?: string }) => {
+export const HotelsSection = ({ bgColor = "bg-slate-900", bgHex, cardBgColorHex: _cardBgColorHex }: { bgColor?: string; bgHex?: string; cardBgColorHex?: string }) => {
   const ref = useRef(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -55,7 +55,7 @@ export const HotelsSection = ({ bgColor = "bg-slate-900", bgHex, cardBgColorHex 
     <section id="hotels" className={`py-0 ${bgColor} text-white overflow-hidden`} style={bgHex ? { backgroundColor: bgHex } : {}}>
       <div 
         ref={containerRef}
-        className="w-full px-4 cursor-grab"
+        className="w-full px-2 cursor-grab"
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
@@ -63,9 +63,9 @@ export const HotelsSection = ({ bgColor = "bg-slate-900", bgHex, cardBgColorHex 
       >
         <div 
           ref={scrollRef}
-          className="overflow-x-auto py-9 scrollbar-hide"
+          className="overflow-x-auto py-4 scrollbar-hide"
         >
-          <div ref={ref} className="flex flex-nowrap items-center justify-center gap-6 w-max mx-auto">
+          <div ref={ref} className="flex flex-nowrap items-center justify-center gap-[1.53rem] w-max mx-auto">
             {hotels.map((hotel, index) => {
               const isCardless = hotel.name === "Four Points by Sheraton, Riverview" || hotel.name === "Furama Riverfront";
               const isSemiCardless = isCardless;
@@ -76,20 +76,13 @@ export const HotelsSection = ({ bgColor = "bg-slate-900", bgHex, cardBgColorHex 
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="transition-colors duration-300 px-4 py-4 rounded-lg border hover:border-rose-400 flex-shrink-0 h-[210px] flex items-center justify-center"
-                style={cardBgColorHex ? { 
-                  backgroundColor: cardBgColorHex, 
-                  borderColor: "rgba(0,0,0,0.2)",
-                } : {
-                  backgroundColor: "#1e293b",
-                  borderColor: "#334155"
-                }}
+                className="flex-shrink-0 h-[210px] flex items-center justify-center"
               >
                 {hotel.image ? (
                   <img 
                     src={hotel.image} 
                     alt={hotel.name}
-                    className="max-h-[150px] w-auto object-contain"
+                    className="max-h-[195px] w-auto object-contain"
                   />
                 ) : (
                   <p className="text-xl md:text-2xl font-medium whitespace-nowrap text-center">{hotel.name}</p>
