@@ -12,7 +12,6 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       <HeroSection />
-      <HotelsSection />
       <HotelsSection bgHex="#d6909b" cardBgColorHex="#c47a89" />
       <ServicesSection />
       <AboutSection />

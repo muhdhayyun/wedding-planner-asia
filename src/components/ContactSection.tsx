@@ -70,12 +70,12 @@ export const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-1"
           >
-            <div className="bg-champagne rounded-2xl p-4 h-full">
-              <h3 className="font-serif text-2xl text-foreground mb-6">
+            <div className="bg-champagne rounded-2xl p-8 h-full">
+              <h3 className="font-serif text-2xl text-foreground mb-8">
                 Get in Touch
               </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-blush rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-4 h-4 text-blush-dark" />
@@ -103,7 +103,7 @@ export const ContactSection = () => {
                   <div>
                     <p className="font-sans text-sm text-muted-foreground mb-1">Consultation</p>
                     <p className="font-sans text-foreground">
-                      Reserve a complimentary 45-minute consultation through <a href="https://calendly.com/weddingandromance" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Calendly</a>
+                      Reserve a complimentary 45-minute<br />consultation through <a href="https://calendly.com/weddingandromance" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Calendly</a>
                     </p>
                   </div>
                 </div>
@@ -118,7 +118,6 @@ export const ContactSection = () => {
                   </div>
                 </div>
               </div>
-
               <div className="mt-8 pt-8 border-t border-border">
                 <p className="font-serif text-lg text-foreground italic">
                   "Every great celebration begins with a conversation."
@@ -150,7 +149,7 @@ export const ContactSection = () => {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="bg-card rounded-2xl p-8 md:p-10 shadow-romantic border border-border/50"
+                className="bg-card rounded-2xl p-4 md:p-6 shadow-romantic border border-border/50"
               >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Menu, X } from "lucide-react";
-import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -43,7 +42,7 @@ export const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center h-16 md:h-20">
           {/* Logo */}
           <button
             onClick={() => scrollToSection("#home")}
@@ -55,7 +54,7 @@ export const Navigation = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex flex-1 items-center justify-end gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.href}
@@ -68,20 +67,9 @@ export const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button
-              variant="romantic"
-              size="sm"
-              onClick={() => scrollToSection("#contact")}
-            >
-              Start Planning Your Day
-            </Button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 ml-auto"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -110,15 +98,6 @@ export const Navigation = () => {
                   {link.label}
                 </button>
               ))}
-              <div className="px-4 pt-2">
-                <Button
-                  variant="romantic"
-                  className="w-full"
-                  onClick={() => scrollToSection("#contact")}
-                >
-                  Start Planning Your Day
-                </Button>
-              </div>
             </div>
           </motion.div>
         )}
