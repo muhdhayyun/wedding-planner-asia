@@ -1,16 +1,9 @@
 import { motion } from "framer-motion";
-import { ChevronDown, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import heroImage from "@/assets/hero-planner.jpg";
 
 export const HeroSection = () => {
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section
       id="home"
@@ -85,23 +78,17 @@ export const HeroSection = () => {
           <Button
             variant="hero"
             size="xl"
-            onClick={() => scrollToSection("#contact")}
+            onClick={() => {
+              const element = document.querySelector("#contact");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Start Planning Your Day
           </Button>
         </motion.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.button
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 1.2 }}
-        onClick={() => scrollToSection("#services")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-float"
-      >
-        <ChevronDown className="w-8 h-8" />
-      </motion.button>
     </section>
   );
 };

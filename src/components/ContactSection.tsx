@@ -62,7 +62,7 @@ export const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -70,7 +70,7 @@ export const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-1"
           >
-            <div className="bg-champagne rounded-2xl p-8 h-full">
+            <div className="bg-champagne rounded-2xl p-4 h-full">
               <h3 className="font-serif text-2xl text-foreground mb-6">
                 Get in Touch
               </h3>
@@ -132,7 +132,7 @@ export const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="lg:col-span-2"
+            className="lg:col-span-1"
           >
             {isSubmitted ? (
               <div className="bg-card rounded-2xl p-12 text-center shadow-romantic border border-border/50 h-full flex flex-col items-center justify-center">
